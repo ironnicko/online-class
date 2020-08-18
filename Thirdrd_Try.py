@@ -39,7 +39,7 @@ def one(h, m, url):
     for _ in iter(main.hour, h):
         pass
     for _ in iter(main.minute, m):
-        if main.hour()>h:
+        if main.hour()>h and main.minute()>m:
             break
         else:
             pass
