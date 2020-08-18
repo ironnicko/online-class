@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/online-class.iml" filepath="$PROJECT_DIR$/.idea/online-class.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/Programs/GitHubRepo/.idea/GitHubRepo.iml" filepath="$USER_HOME$/Desktop/Programs/GitHubRepo/.idea/GitHubRepo.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/Programs/GitHubRepo/online-class/.idea/online-class.iml" filepath="$USER_HOME$/Desktop/Programs/GitHubRepo/online-class/.idea/online-class.iml" />
     </modules>
   </component>
 </project>
