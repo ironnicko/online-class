@@ -34,17 +34,6 @@ class main:
         return f'{main.hour()}:{main.minute()}:{main.second()}'
 
 
-# open
-def one(h, m, url):
-    for _ in iter(main.hour, h):
-        pass
-    for _ in iter(main.minute, m):
-        if main.hour()>h and main.minute()>m:
-            break
-        else:
-            pass
-    webbrowser.open(url)
-
 
 # check if it is the time
 def checker():
@@ -66,6 +55,18 @@ def checker():
     else:
         c = 7
 
+
+# open
+def one(h, m, url):
+    for _ in iter(main.hour, h):
+        pass
+    for _ in iter(main.minute, m):
+        if main.hour()>h and main.minute()>m:
+            break
+        else:
+            pass
+    webbrowser.open(url)
+    checker()
 # call time in 24Hr-Format
 def open():
     global c
@@ -74,26 +75,21 @@ def open():
         print(main.clock())
     if c == 0:
         one(8, 43, first)
-    checker()
     if c == 1:
         one(9, 43, first)
-    checker()
     if c == 2:
         one(11, 13, first)
-    checker()
     if c == 3:
         one(12, 13, third)
-    checker()
     if c == 4:
         one(15, 13, four)
-    checker()
     if c == 5:
         one(16, 13, four)
-    checker()
     if c == 6:
         one(17, 13, four)
 
 
 # end
 if __name__ == '__main__':
-    open()
+    while True:
+        open()
