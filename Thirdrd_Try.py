@@ -63,7 +63,7 @@ def checker():
     else:
         c = 7
 
-# call
+# call time in 24Hr-Format
 def open():
     global c
     while c==7:
