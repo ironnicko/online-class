@@ -65,6 +65,7 @@ def one(h, m, url):
             break
         else:
             pass
+    time.sleep(59)
     webbrowser.open(url)
     checker()
 # call time in 24Hr-Format
