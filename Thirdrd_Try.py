@@ -58,6 +58,8 @@ def checker():
 
 # open
 def one(h, m, url):
+    global c
+    c=7
     for _ in iter(main.hour, h):
         pass
     for _ in iter(main.minute, m):
