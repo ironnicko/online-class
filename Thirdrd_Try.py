@@ -4,11 +4,11 @@ import time, webbrowser
 c: int = 7
 local = time.localtime()
 first = 'https://zoom.us/j/92944074947?pwd=eGFJYWRwa2pEOWRZbDk1dkg5ZVFrZz09'
-second = 'https://zoom.us/j/92944074947?pwd=eGFJYWRwa2pEOWRZbDk1dkg5ZVFrZz09'
+second = first
 third = 'https://zoom.us/j/91802273425?pwd=Kzc1YmRIWW9nM1NzY3ZaRDlnZzdVQT09'
 four = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'
-five = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'
-six = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'
+five = four
+six = four
 
 
 # time
