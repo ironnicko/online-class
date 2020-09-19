@@ -1,6 +1,7 @@
 import time
 from datetime import datetime as D
 from webbrowser import open
+import pynput
 
 # time
 LOCAL = D.now()
@@ -15,10 +16,10 @@ class Clock:
     second = 'https://zoom.us/j/92944074947?pwd=eGFJYWRwa2pEOWRZbDk1dkg5ZVFrZz09'  # 9:45 - 10:45
     # 11:15 - 12:15
     third = 'https://zoom.us/j/92944074947?pwd=eGFJYWRwa2pEOWRZbDk1dkg5ZVFrZz09'
-    four = 'https://zoom.us/j/91802273425?pwd=Kzc1YmRIWW9nM1NzY3ZaRDlnZzdVQT09'     # 12:15 - 1:15
-    five = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'     # 3:15 - 4:15
-    six = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'      # 4:15 - 5:15
-    seven = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'    # 5:15 - 6:15
+    four = 'https://zoom.us/j/91802273425?pwd=Kzc1YmRIWW9nM1NzY3ZaRDlnZzdVQT09'  # 12:15 - 1:15
+    five = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'  # 3:15 - 4:15
+    six = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'  # 4:15 - 5:15
+    seven = 'https://zoom.us/j/97270225115?pwd=Q1IwMkRnclVGODJmU29kdHlCMllpZz09'  # 5:15 - 6:15
     l = LOCAL
 
     # Functions
@@ -116,6 +117,13 @@ class Clock:
 
 
 if __name__ == '__main__':
-    while True:
-        Clock.check()
-        Clock.open()
+
+    def on_press(key):
+        if key == pynput.keyboard.Key.f5:
+            while True:
+                Clock.check()
+                Clock.open()
+
+
+    with pynput.keyboard.Listener(on_press=on_press) as L:
+        L.join()
