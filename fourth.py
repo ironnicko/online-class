@@ -6,7 +6,8 @@ from webbrowser import open
 import pynput
 
 """ Hey! Thanks for opening up the right one. It might seem unreadable[that's cuz im an amatur] but basically paste your first, second, etc... period links onto
-    the respective variables as strings. And futhur down at check(), replace them by the periods that change weekly; feel free to add more conditions or remove them."""
+    the respective variables as strings. And futhur down at check(), replace them by the periods that change weekly; feel free to add more conditions or remove them.
+    'F5' starts the program and 'Esc' closes it."""
 
 # time
 LOCAL = D.now()
