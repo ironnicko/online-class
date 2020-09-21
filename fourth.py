@@ -1,7 +1,12 @@
+import os
+os.system('pip install pynput')
 import time
 from datetime import datetime as D
 from webbrowser import open
 import pynput
+
+""" Hey! Thanks for opening up the right one. It might seem unreadable[that's cuz im an amatur] but basically paste your first, second, etc... period links onto
+    the respective variables as strings. And futhur down at check(), replace them by the periods that change weekly; feel free to add more conditions or remove them."""
 
 # time
 LOCAL = D.now()
@@ -119,10 +124,16 @@ class Clock:
 if __name__ == '__main__':
 
     def on_press(key):
-        if key == pynput.keyboard.Key.f5:
-            while True:
+        p = True
+        if key == pynput.keyboard.Key.esc:
+            return False
+
+        elif key == pynput.keyboard.Key.f5:
+             while p == True:
                 Clock.check()
                 Clock.open()
+                p = False            
+
 
 
     with pynput.keyboard.Listener(on_press=on_press) as L:
