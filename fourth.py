@@ -63,7 +63,7 @@ class Clock:
     @classmethod
     def check(cls):
         if str(Clock.week()) == 'Wed':
-            cls.five = 'https://zoom.us/j/96750768662?pwd=a1JINmUya3VxRzhxdjdmZStTZHJZZz09'
+            cls.four = 'https://zoom.us/j/96750768662?pwd=a1JINmUya3VxRzhxdjdmZStTZHJZZz09'
         elif str(Clock.week()) == 'Thu':
             cls.six = 'https://zoom.us/j/93122077432?pwd=YUFIaDVwSDVZYjNnOWNHK2lzV1dyZz09'
         elif str(Clock.week()) == 'Fri':
